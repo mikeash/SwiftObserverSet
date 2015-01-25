@@ -80,7 +80,7 @@ public class ObserverSet<Parameters>: Printable {
             entries = self.entries
         }
         
-        let strings = self.entries.map{
+        let strings = entries.map{
             entry in
             (entry.object === self
                 ? "\(entry.f)"
