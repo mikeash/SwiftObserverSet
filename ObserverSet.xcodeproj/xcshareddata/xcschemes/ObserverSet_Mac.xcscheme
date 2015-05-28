@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C2CC54581A71D8610084E87D"
-               BuildableName = "ObserverSet_Mac.framework"
+               BuildableName = "ObserverSet.framework"
                BlueprintName = "ObserverSet_Mac"
                ReferencedContainer = "container:ObserverSet.xcodeproj">
             </BuildableReference>
@@ -57,7 +57,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C2CC54581A71D8610084E87D"
-            BuildableName = "ObserverSet_Mac.framework"
+            BuildableName = "ObserverSet.framework"
             BlueprintName = "ObserverSet_Mac"
             ReferencedContainer = "container:ObserverSet.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C2CC54581A71D8610084E87D"
-            BuildableName = "ObserverSet_Mac.framework"
+            BuildableName = "ObserverSet.framework"
             BlueprintName = "ObserverSet_Mac"
             ReferencedContainer = "container:ObserverSet.xcodeproj">
          </BuildableReference>
@@ -94,7 +94,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C2CC54581A71D8610084E87D"
-            BuildableName = "ObserverSet_Mac.framework"
+            BuildableName = "ObserverSet.framework"
             BlueprintName = "ObserverSet_Mac"
             ReferencedContainer = "container:ObserverSet.xcodeproj">
          </BuildableReference>
