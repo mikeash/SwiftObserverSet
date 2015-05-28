@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		739EBD0E1B16A76C0007B4E6 /* ObserverSet_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 739EBD0D1B16A76C0007B4E6 /* ObserverSet_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		739EBD141B16A76C0007B4E6 /* ObserverSet_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 739EBD091B16A76C0007B4E6 /* ObserverSet_iOS.framework */; };
-		739EBD1B1B16A76C0007B4E6 /* ObserverSet_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739EBD1A1B16A76C0007B4E6 /* ObserverSet_iOSTests.swift */; };
+		739EBD141B16A76C0007B4E6 /* ObserverSet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 739EBD091B16A76C0007B4E6 /* ObserverSet.framework */; };
 		739EBD221B16A80D0007B4E6 /* ObserverSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CC54751A71D8FE0084E87D /* ObserverSet.swift */; };
-		C2CC54651A71D8610084E87D /* ObserverSet_Mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2CC54591A71D8610084E87D /* ObserverSet_Mac.framework */; };
+		73B2357B1B17D71700A96ED8 /* ObserverSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CC546B1A71D8610084E87D /* ObserverSetTests.swift */; };
+		C2CC54651A71D8610084E87D /* ObserverSet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2CC54591A71D8610084E87D /* ObserverSet.framework */; };
 		C2CC546C1A71D8610084E87D /* ObserverSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CC546B1A71D8610084E87D /* ObserverSetTests.swift */; };
 		C2CC54761A71D8FE0084E87D /* ObserverSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CC54751A71D8FE0084E87D /* ObserverSet.swift */; };
 /* End PBXBuildFile section */
@@ -35,13 +35,12 @@
 
 /* Begin PBXFileReference section */
 		739EBD031B16A7340007B4E6 /* ObserverSet_Mac copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ObserverSet_Mac copy-Info.plist"; path = "/Users/jeffberg/Documents/Github/SwiftObserverSet/ObserverSet_Mac copy-Info.plist"; sourceTree = "<absolute>"; };
-		739EBD091B16A76C0007B4E6 /* ObserverSet_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObserverSet_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		739EBD091B16A76C0007B4E6 /* ObserverSet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObserverSet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		739EBD0C1B16A76C0007B4E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		739EBD0D1B16A76C0007B4E6 /* ObserverSet_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObserverSet_iOS.h; sourceTree = "<group>"; };
 		739EBD131B16A76C0007B4E6 /* ObserverSet_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObserverSet_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		739EBD191B16A76C0007B4E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		739EBD1A1B16A76C0007B4E6 /* ObserverSet_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverSet_iOSTests.swift; sourceTree = "<group>"; };
-		C2CC54591A71D8610084E87D /* ObserverSet_Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObserverSet_Mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		739EBD191B16A76C0007B4E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../ObserverSet_iOSTests/Info.plist; sourceTree = "<group>"; };
+		C2CC54591A71D8610084E87D /* ObserverSet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObserverSet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2CC545D1A71D8610084E87D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2CC54641A71D8610084E87D /* ObserverSetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObserverSetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2CC546A1A71D8610084E87D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				739EBD141B16A76C0007B4E6 /* ObserverSet_iOS.framework in Frameworks */,
+				739EBD141B16A76C0007B4E6 /* ObserverSet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2CC54651A71D8610084E87D /* ObserverSet_Mac.framework in Frameworks */,
+				C2CC54651A71D8610084E87D /* ObserverSet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,30 +99,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		739EBD171B16A76C0007B4E6 /* ObserverSet_iOSTests */ = {
-			isa = PBXGroup;
-			children = (
-				739EBD1A1B16A76C0007B4E6 /* ObserverSet_iOSTests.swift */,
-				739EBD181B16A76C0007B4E6 /* Supporting Files */,
-			);
-			path = ObserverSet_iOSTests;
-			sourceTree = "<group>";
-		};
-		739EBD181B16A76C0007B4E6 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				739EBD191B16A76C0007B4E6 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		C2CC544F1A71D8610084E87D = {
 			isa = PBXGroup;
 			children = (
 				C2CC545B1A71D8610084E87D /* ObserverSet */,
 				C2CC54681A71D8610084E87D /* ObserverSetTests */,
 				739EBD0A1B16A76C0007B4E6 /* ObserverSet_iOS */,
-				739EBD171B16A76C0007B4E6 /* ObserverSet_iOSTests */,
 				C2CC545A1A71D8610084E87D /* Products */,
 				739EBD031B16A7340007B4E6 /* ObserverSet_Mac copy-Info.plist */,
 			);
@@ -132,9 +113,9 @@
 		C2CC545A1A71D8610084E87D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C2CC54591A71D8610084E87D /* ObserverSet_Mac.framework */,
+				C2CC54591A71D8610084E87D /* ObserverSet.framework */,
 				C2CC54641A71D8610084E87D /* ObserverSetTests.xctest */,
-				739EBD091B16A76C0007B4E6 /* ObserverSet_iOS.framework */,
+				739EBD091B16A76C0007B4E6 /* ObserverSet.framework */,
 				739EBD131B16A76C0007B4E6 /* ObserverSet_iOSTests.xctest */,
 			);
 			name = Products;
@@ -170,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				C2CC546A1A71D8610084E87D /* Info.plist */,
+				739EBD191B16A76C0007B4E6 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -210,7 +192,7 @@
 			);
 			name = ObserverSet_iOS;
 			productName = ObserverSet_iOS;
-			productReference = 739EBD091B16A76C0007B4E6 /* ObserverSet_iOS.framework */;
+			productReference = 739EBD091B16A76C0007B4E6 /* ObserverSet.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		739EBD121B16A76C0007B4E6 /* ObserverSet_iOSTests */ = {
@@ -246,7 +228,7 @@
 			);
 			name = ObserverSet_Mac;
 			productName = ObserverSet;
-			productReference = C2CC54591A71D8610084E87D /* ObserverSet_Mac.framework */;
+			productReference = C2CC54591A71D8610084E87D /* ObserverSet.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C2CC54631A71D8610084E87D /* ObserverSetTests */ = {
@@ -354,7 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				739EBD1B1B16A76C0007B4E6 /* ObserverSet_iOSTests.swift in Sources */,
+				73B2357B1B17D71700A96ED8 /* ObserverSetTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,7 +390,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ObserverSet;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -429,7 +411,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ObserverSet;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -573,7 +555,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ObserverSet;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -593,7 +575,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ObserverSet;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -640,6 +622,7 @@
 				739EBD1E1B16A76C0007B4E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		739EBD1F1B16A76C0007B4E6 /* Build configuration list for PBXNativeTarget "ObserverSet_iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -648,6 +631,7 @@
 				739EBD211B16A76C0007B4E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C2CC54531A71D8610084E87D /* Build configuration list for PBXProject "ObserverSet" */ = {
 			isa = XCConfigurationList;
