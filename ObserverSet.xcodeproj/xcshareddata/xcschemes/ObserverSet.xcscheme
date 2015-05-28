@@ -16,7 +16,11 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C2CC54581A71D8610084E87D"
                BuildableName = "ObserverSet.framework"
+<<<<<<< HEAD:ObserverSet.xcodeproj/xcshareddata/xcschemes/ObserverSet_Mac.xcscheme
                BlueprintName = "ObserverSet_Mac"
+=======
+               BlueprintName = "ObserverSet"
+>>>>>>> 941ae26ee43d59fecfbd9d6b0bf4c997a8cecdfe:ObserverSet.xcodeproj/xcshareddata/xcschemes/ObserverSet.xcscheme
                ReferencedContainer = "container:ObserverSet.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -58,7 +62,11 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C2CC54581A71D8610084E87D"
             BuildableName = "ObserverSet.framework"
+<<<<<<< HEAD:ObserverSet.xcodeproj/xcshareddata/xcschemes/ObserverSet_Mac.xcscheme
             BlueprintName = "ObserverSet_Mac"
+=======
+            BlueprintName = "ObserverSet"
+>>>>>>> 941ae26ee43d59fecfbd9d6b0bf4c997a8cecdfe:ObserverSet.xcodeproj/xcshareddata/xcschemes/ObserverSet.xcscheme
             ReferencedContainer = "container:ObserverSet.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -77,7 +85,11 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C2CC54581A71D8610084E87D"
             BuildableName = "ObserverSet.framework"
+<<<<<<< HEAD:ObserverSet.xcodeproj/xcshareddata/xcschemes/ObserverSet_Mac.xcscheme
             BlueprintName = "ObserverSet_Mac"
+=======
+            BlueprintName = "ObserverSet"
+>>>>>>> 941ae26ee43d59fecfbd9d6b0bf4c997a8cecdfe:ObserverSet.xcodeproj/xcshareddata/xcschemes/ObserverSet.xcscheme
             ReferencedContainer = "container:ObserverSet.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -95,7 +107,11 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C2CC54581A71D8610084E87D"
             BuildableName = "ObserverSet.framework"
+<<<<<<< HEAD:ObserverSet.xcodeproj/xcshareddata/xcschemes/ObserverSet_Mac.xcscheme
             BlueprintName = "ObserverSet_Mac"
+=======
+            BlueprintName = "ObserverSet"
+>>>>>>> 941ae26ee43d59fecfbd9d6b0bf4c997a8cecdfe:ObserverSet.xcodeproj/xcshareddata/xcschemes/ObserverSet.xcscheme
             ReferencedContainer = "container:ObserverSet.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

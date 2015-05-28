@@ -7,23 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		739EBD0E1B16A76C0007B4E6 /* ObserverSet_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 739EBD0D1B16A76C0007B4E6 /* ObserverSet_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		739EBD141B16A76C0007B4E6 /* ObserverSet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 739EBD091B16A76C0007B4E6 /* ObserverSet.framework */; };
 		739EBD221B16A80D0007B4E6 /* ObserverSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CC54751A71D8FE0084E87D /* ObserverSet.swift */; };
 		73B2357B1B17D71700A96ED8 /* ObserverSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CC546B1A71D8610084E87D /* ObserverSetTests.swift */; };
+=======
+>>>>>>> 941ae26ee43d59fecfbd9d6b0bf4c997a8cecdfe
 		C2CC54651A71D8610084E87D /* ObserverSet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2CC54591A71D8610084E87D /* ObserverSet.framework */; };
 		C2CC546C1A71D8610084E87D /* ObserverSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CC546B1A71D8610084E87D /* ObserverSetTests.swift */; };
 		C2CC54761A71D8FE0084E87D /* ObserverSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CC54751A71D8FE0084E87D /* ObserverSet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		739EBD151B16A76C0007B4E6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C2CC54501A71D8610084E87D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 739EBD081B16A76C0007B4E6;
-			remoteInfo = ObserverSet_iOS;
-		};
 		C2CC54661A71D8610084E87D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C2CC54501A71D8610084E87D /* Project object */;
@@ -35,11 +31,14 @@
 
 /* Begin PBXFileReference section */
 		739EBD031B16A7340007B4E6 /* ObserverSet_Mac copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ObserverSet_Mac copy-Info.plist"; path = "/Users/jeffberg/Documents/Github/SwiftObserverSet/ObserverSet_Mac copy-Info.plist"; sourceTree = "<absolute>"; };
+<<<<<<< HEAD
 		739EBD091B16A76C0007B4E6 /* ObserverSet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObserverSet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		739EBD0C1B16A76C0007B4E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		739EBD0D1B16A76C0007B4E6 /* ObserverSet_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObserverSet_iOS.h; sourceTree = "<group>"; };
 		739EBD131B16A76C0007B4E6 /* ObserverSet_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObserverSet_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		739EBD191B16A76C0007B4E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../ObserverSet_iOSTests/Info.plist; sourceTree = "<group>"; };
+=======
+>>>>>>> 941ae26ee43d59fecfbd9d6b0bf4c997a8cecdfe
 		C2CC54591A71D8610084E87D /* ObserverSet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObserverSet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2CC545D1A71D8610084E87D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2CC54641A71D8610084E87D /* ObserverSetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObserverSetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +48,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+<<<<<<< HEAD
 		739EBD051B16A76C0007B4E6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -64,6 +64,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+=======
+>>>>>>> 941ae26ee43d59fecfbd9d6b0bf4c997a8cecdfe
 		C2CC54551A71D8610084E87D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -82,6 +84,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+<<<<<<< HEAD
 		739EBD0A1B16A76C0007B4E6 /* ObserverSet_iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,12 +102,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+=======
+>>>>>>> 941ae26ee43d59fecfbd9d6b0bf4c997a8cecdfe
 		C2CC544F1A71D8610084E87D = {
 			isa = PBXGroup;
 			children = (
 				C2CC545B1A71D8610084E87D /* ObserverSet */,
 				C2CC54681A71D8610084E87D /* ObserverSetTests */,
+<<<<<<< HEAD
 				739EBD0A1B16A76C0007B4E6 /* ObserverSet_iOS */,
+=======
+>>>>>>> 941ae26ee43d59fecfbd9d6b0bf4c997a8cecdfe
 				C2CC545A1A71D8610084E87D /* Products */,
 				739EBD031B16A7340007B4E6 /* ObserverSet_Mac copy-Info.plist */,
 			);
@@ -115,8 +123,11 @@
 			children = (
 				C2CC54591A71D8610084E87D /* ObserverSet.framework */,
 				C2CC54641A71D8610084E87D /* ObserverSetTests.xctest */,
+<<<<<<< HEAD
 				739EBD091B16A76C0007B4E6 /* ObserverSet.framework */,
 				739EBD131B16A76C0007B4E6 /* ObserverSet_iOSTests.xctest */,
+=======
+>>>>>>> 941ae26ee43d59fecfbd9d6b0bf4c997a8cecdfe
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,14 +170,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		739EBD061B16A76C0007B4E6 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				739EBD0E1B16A76C0007B4E6 /* ObserverSet_iOS.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C2CC54561A71D8610084E87D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -177,6 +180,7 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+<<<<<<< HEAD
 		739EBD081B16A76C0007B4E6 /* ObserverSet_iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 739EBD1C1B16A76C0007B4E6 /* Build configuration list for PBXNativeTarget "ObserverSet_iOS" */;
@@ -196,26 +200,11 @@
 			productType = "com.apple.product-type.framework";
 		};
 		739EBD121B16A76C0007B4E6 /* ObserverSet_iOSTests */ = {
+=======
+		C2CC54581A71D8610084E87D /* ObserverSet */ = {
+>>>>>>> 941ae26ee43d59fecfbd9d6b0bf4c997a8cecdfe
 			isa = PBXNativeTarget;
-			buildConfigurationList = 739EBD1F1B16A76C0007B4E6 /* Build configuration list for PBXNativeTarget "ObserverSet_iOSTests" */;
-			buildPhases = (
-				739EBD0F1B16A76C0007B4E6 /* Sources */,
-				739EBD101B16A76C0007B4E6 /* Frameworks */,
-				739EBD111B16A76C0007B4E6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				739EBD161B16A76C0007B4E6 /* PBXTargetDependency */,
-			);
-			name = ObserverSet_iOSTests;
-			productName = ObserverSet_iOSTests;
-			productReference = 739EBD131B16A76C0007B4E6 /* ObserverSet_iOSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		C2CC54581A71D8610084E87D /* ObserverSet_Mac */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C2CC546F1A71D8610084E87D /* Build configuration list for PBXNativeTarget "ObserverSet_Mac" */;
+			buildConfigurationList = C2CC546F1A71D8610084E87D /* Build configuration list for PBXNativeTarget "ObserverSet" */;
 			buildPhases = (
 				C2CC54541A71D8610084E87D /* Sources */,
 				C2CC54551A71D8610084E87D /* Frameworks */,
@@ -226,7 +215,7 @@
 			);
 			dependencies = (
 			);
-			name = ObserverSet_Mac;
+			name = ObserverSet;
 			productName = ObserverSet;
 			productReference = C2CC54591A71D8610084E87D /* ObserverSet.framework */;
 			productType = "com.apple.product-type.framework";
@@ -258,12 +247,6 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Mike Ash";
 				TargetAttributes = {
-					739EBD081B16A76C0007B4E6 = {
-						CreatedOnToolsVersion = 6.4;
-					};
-					739EBD121B16A76C0007B4E6 = {
-						CreatedOnToolsVersion = 6.4;
-					};
 					C2CC54581A71D8610084E87D = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
@@ -284,29 +267,13 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C2CC54581A71D8610084E87D /* ObserverSet_Mac */,
+				C2CC54581A71D8610084E87D /* ObserverSet */,
 				C2CC54631A71D8610084E87D /* ObserverSetTests */,
-				739EBD081B16A76C0007B4E6 /* ObserverSet_iOS */,
-				739EBD121B16A76C0007B4E6 /* ObserverSet_iOSTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		739EBD071B16A76C0007B4E6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		739EBD111B16A76C0007B4E6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C2CC54571A71D8610084E87D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -324,6 +291,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+<<<<<<< HEAD
 		739EBD041B16A76C0007B4E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -340,6 +308,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+=======
+>>>>>>> 941ae26ee43d59fecfbd9d6b0bf4c997a8cecdfe
 		C2CC54541A71D8610084E87D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -359,19 +329,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		739EBD161B16A76C0007B4E6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 739EBD081B16A76C0007B4E6 /* ObserverSet_iOS */;
-			targetProxy = 739EBD151B16A76C0007B4E6 /* PBXContainerItemProxy */;
-		};
 		C2CC54671A71D8610084E87D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C2CC54581A71D8610084E87D /* ObserverSet_Mac */;
+			target = C2CC54581A71D8610084E87D /* ObserverSet */;
 			targetProxy = C2CC54661A71D8610084E87D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+<<<<<<< HEAD
 		739EBD1D1B16A76C0007B4E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -460,6 +426,8 @@
 			};
 			name = Release;
 		};
+=======
+>>>>>>> 941ae26ee43d59fecfbd9d6b0bf4c997a8cecdfe
 		C2CC546D1A71D8610084E87D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -494,7 +462,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -533,7 +501,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -558,6 +526,7 @@
 				PRODUCT_NAME = ObserverSet;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALID_ARCHS = "i386 x86_64 arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -577,6 +546,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = ObserverSet;
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = "i386 x86_64 arm64 armv7 armv7s";
 			};
 			name = Release;
 		};
@@ -615,6 +585,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+<<<<<<< HEAD
 		739EBD1C1B16A76C0007B4E6 /* Build configuration list for PBXNativeTarget "ObserverSet_iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -633,6 +604,8 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+=======
+>>>>>>> 941ae26ee43d59fecfbd9d6b0bf4c997a8cecdfe
 		C2CC54531A71D8610084E87D /* Build configuration list for PBXProject "ObserverSet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -642,7 +615,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C2CC546F1A71D8610084E87D /* Build configuration list for PBXNativeTarget "ObserverSet_Mac" */ = {
+		C2CC546F1A71D8610084E87D /* Build configuration list for PBXNativeTarget "ObserverSet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C2CC54701A71D8610084E87D /* Debug */,

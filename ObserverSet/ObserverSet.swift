@@ -8,7 +8,6 @@
 
 import Dispatch
 
-
 public class ObserverSetEntry<Parameters> {
     private weak var object: AnyObject?
     private let f: AnyObject -> Parameters -> Void
