@@ -6,8 +6,7 @@
 //  Copyright (c) 2015 Mike Ash. All rights reserved.
 //
 
-import dispatch
-
+import Dispatch
 
 public class ObserverSetEntry<Parameters> {
     private weak var object: AnyObject?
@@ -37,7 +36,7 @@ public class ObserverSet<Parameters>: Printable {
     public init() {}
     
     public func add<T: AnyObject>(object: T, _ f: T -> Parameters -> Void) -> ObserverSetEntry<Parameters> {
-        let entry = ObserverSetEntry<Parameters>(object: object, f: { f($0 as T) })
+        let entry = ObserverSetEntry<Parameters>(object: object, f: { f($0 as! T) })
         synchronized {
             self.entries.append(entry)
         }
