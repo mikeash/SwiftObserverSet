@@ -80,8 +80,7 @@ public class ObserverSet<Parameters>: CustomStringConvertible {
             entries = self.entries
         }
         
-        let strings = entries.map{
-            entry in
+        let strings = entries.map { entry in
             (entry.object === self
                 ? "\(entry.f)"
                 : "\(entry.object) \(entry.f)")

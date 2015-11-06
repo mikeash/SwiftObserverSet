@@ -23,10 +23,10 @@ class ObserverSetTests: XCTestCase {
         func testNotify() {
             self.voidObservers.notify()
             self.stringObservers.notify("Sup")
-//            self.twoStringObservers.notify("hello", "world")
-//            self.intObservers.notify(42, 43)
-//            self.intAndStringObservers.notify(42, "hello")
-//            self.namedParameterObservers.notify(name: "someName", count: 42)
+            self.twoStringObservers.notify(("hello", "world"))
+            self.intObservers.notify((42, 43))
+            self.intAndStringObservers.notify((42, "hello"))
+            self.namedParameterObservers.notify((name: "someName", count: 42))
         }
     }
     
