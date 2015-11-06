@@ -7,12 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		730308FB1B483EB9004089B7 /* ObserverSet_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 730308FA1B483EB9004089B7 /* ObserverSet_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		730309011B483EB9004089B7 /* ObserverSet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 730308F61B483EB9004089B7 /* ObserverSet.framework */; };
+		730309101B483EE6004089B7 /* ObserverSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CC546B1A71D8610084E87D /* ObserverSetTests.swift */; };
+		730309111B483EEC004089B7 /* ObserverSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CC54751A71D8FE0084E87D /* ObserverSet.swift */; };
 		C2CC54651A71D8610084E87D /* ObserverSet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2CC54591A71D8610084E87D /* ObserverSet.framework */; };
 		C2CC546C1A71D8610084E87D /* ObserverSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CC546B1A71D8610084E87D /* ObserverSetTests.swift */; };
 		C2CC54761A71D8FE0084E87D /* ObserverSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CC54751A71D8FE0084E87D /* ObserverSet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		730309021B483EB9004089B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2CC54501A71D8610084E87D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 730308F51B483EB8004089B7;
+			remoteInfo = ObserverSet_iOS;
+		};
 		C2CC54661A71D8610084E87D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C2CC54501A71D8610084E87D /* Project object */;
@@ -23,6 +34,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		730308F61B483EB9004089B7 /* ObserverSet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObserverSet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		730308F91B483EB9004089B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		730308FA1B483EB9004089B7 /* ObserverSet_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObserverSet_iOS.h; sourceTree = "<group>"; };
+		730309001B483EB9004089B7 /* ObserverSet_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObserverSet_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		730309121B483FC6004089B7 /* InfoTestiOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InfoTestiOS.plist; sourceTree = "<group>"; };
 		C2CC54591A71D8610084E87D /* ObserverSet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObserverSet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2CC545D1A71D8610084E87D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2CC54641A71D8610084E87D /* ObserverSetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObserverSetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,6 +48,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		730308F21B483EB8004089B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		730308FD1B483EB9004089B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				730309011B483EB9004089B7 /* ObserverSet.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C2CC54551A71D8610084E87D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -50,11 +81,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		730308F71B483EB9004089B7 /* ObserverSet_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				730308FA1B483EB9004089B7 /* ObserverSet_iOS.h */,
+				730308F81B483EB9004089B7 /* Supporting Files */,
+			);
+			path = ObserverSet_iOS;
+			sourceTree = "<group>";
+		};
+		730308F81B483EB9004089B7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				730308F91B483EB9004089B7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		C2CC544F1A71D8610084E87D = {
 			isa = PBXGroup;
 			children = (
 				C2CC545B1A71D8610084E87D /* ObserverSet */,
 				C2CC54681A71D8610084E87D /* ObserverSetTests */,
+				730308F71B483EB9004089B7 /* ObserverSet_iOS */,
 				C2CC545A1A71D8610084E87D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +113,8 @@
 			children = (
 				C2CC54591A71D8610084E87D /* ObserverSet.framework */,
 				C2CC54641A71D8610084E87D /* ObserverSetTests.xctest */,
+				730308F61B483EB9004089B7 /* ObserverSet.framework */,
+				730309001B483EB9004089B7 /* ObserverSet_iOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,6 +148,7 @@
 		C2CC54691A71D8610084E87D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				730309121B483FC6004089B7 /* InfoTestiOS.plist */,
 				C2CC546A1A71D8610084E87D /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -105,6 +157,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		730308F31B483EB8004089B7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				730308FB1B483EB9004089B7 /* ObserverSet_iOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C2CC54561A71D8610084E87D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,6 +175,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		730308F51B483EB8004089B7 /* ObserverSet_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7303090D1B483EB9004089B7 /* Build configuration list for PBXNativeTarget "ObserverSet_iOS" */;
+			buildPhases = (
+				730308F11B483EB8004089B7 /* Sources */,
+				730308F21B483EB8004089B7 /* Frameworks */,
+				730308F31B483EB8004089B7 /* Headers */,
+				730308F41B483EB8004089B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ObserverSet_iOS;
+			productName = ObserverSet_iOS;
+			productReference = 730308F61B483EB9004089B7 /* ObserverSet.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		730308FF1B483EB9004089B7 /* ObserverSet_iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7303090E1B483EB9004089B7 /* Build configuration list for PBXNativeTarget "ObserverSet_iOSTests" */;
+			buildPhases = (
+				730308FC1B483EB9004089B7 /* Sources */,
+				730308FD1B483EB9004089B7 /* Frameworks */,
+				730308FE1B483EB9004089B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				730309031B483EB9004089B7 /* PBXTargetDependency */,
+			);
+			name = ObserverSet_iOSTests;
+			productName = ObserverSet_iOSTests;
+			productReference = 730309001B483EB9004089B7 /* ObserverSet_iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C2CC54581A71D8610084E87D /* ObserverSet */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C2CC546F1A71D8610084E87D /* Build configuration list for PBXNativeTarget "ObserverSet" */;
@@ -157,9 +253,17 @@
 		C2CC54501A71D8610084E87D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Mike Ash";
 				TargetAttributes = {
+					730308F51B483EB8004089B7 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					730308FF1B483EB9004089B7 = {
+						CreatedOnToolsVersion = 6.4;
+					};
 					C2CC54581A71D8610084E87D = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
@@ -182,11 +286,27 @@
 			targets = (
 				C2CC54581A71D8610084E87D /* ObserverSet */,
 				C2CC54631A71D8610084E87D /* ObserverSetTests */,
+				730308F51B483EB8004089B7 /* ObserverSet_iOS */,
+				730308FF1B483EB9004089B7 /* ObserverSet_iOSTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		730308F41B483EB8004089B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		730308FE1B483EB9004089B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C2CC54571A71D8610084E87D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -204,6 +324,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		730308F11B483EB8004089B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				730309111B483EEC004089B7 /* ObserverSet.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		730308FC1B483EB9004089B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				730309101B483EE6004089B7 /* ObserverSetTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C2CC54541A71D8610084E87D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -223,6 +359,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		730309031B483EB9004089B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 730308F51B483EB8004089B7 /* ObserverSet_iOS */;
+			targetProxy = 730309021B483EB9004089B7 /* PBXContainerItemProxy */;
+		};
 		C2CC54671A71D8610084E87D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C2CC54581A71D8610084E87D /* ObserverSet */;
@@ -231,6 +372,98 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		730309091B483EB9004089B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ObserverSet_iOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mikeash.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = ObserverSet;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7303090A1B483EB9004089B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = ObserverSet_iOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mikeash.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = ObserverSet;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7303090B1B483EB9004089B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ObserverSetTests/InfoTestiOS.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mikeash.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7303090C1B483EB9004089B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = ObserverSetTests/InfoTestiOS.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mikeash.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		C2CC546D1A71D8610084E87D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -251,6 +484,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -325,6 +559,7 @@
 				INFOPLIST_FILE = ObserverSet/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mikeash.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -344,6 +579,7 @@
 				INFOPLIST_FILE = ObserverSet/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mikeash.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -363,6 +599,7 @@
 				);
 				INFOPLIST_FILE = ObserverSetTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mikeash.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -377,6 +614,7 @@
 				);
 				INFOPLIST_FILE = ObserverSetTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mikeash.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -384,6 +622,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7303090D1B483EB9004089B7 /* Build configuration list for PBXNativeTarget "ObserverSet_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				730309091B483EB9004089B7 /* Debug */,
+				7303090A1B483EB9004089B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7303090E1B483EB9004089B7 /* Build configuration list for PBXNativeTarget "ObserverSet_iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7303090B1B483EB9004089B7 /* Debug */,
+				7303090C1B483EB9004089B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C2CC54531A71D8610084E87D /* Build configuration list for PBXProject "ObserverSet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -400,6 +656,7 @@
 				C2CC54711A71D8610084E87D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C2CC54721A71D8610084E87D /* Build configuration list for PBXNativeTarget "ObserverSetTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +665,7 @@
 				C2CC54741A71D8610084E87D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Mike Ash. All rights reserved.
 //
 
-import Cocoa
+import Foundation
 import XCTest
 
 import ObserverSet
@@ -21,12 +21,12 @@ class ObserverSetTests: XCTestCase {
         let namedParameterObservers = ObserverSet<(name: String, count: Int)>()
         
         func testNotify() {
-            voidObservers.notify()
-            stringObservers.notify("Sup")
-            twoStringObservers.notify("hello", "world")
-            intObservers.notify(42, 43)
-            intAndStringObservers.notify(42, "hello")
-            namedParameterObservers.notify(name: "someName", count: 42)
+            self.voidObservers.notify()
+            self.stringObservers.notify("Sup")
+            self.twoStringObservers.notify(("hello", "world"))
+            self.intObservers.notify((42, 43))
+            self.intAndStringObservers.notify((42, "hello"))
+            self.namedParameterObservers.notify((name: "someName", count: 42))
         }
     }
     
@@ -41,31 +41,31 @@ class ObserverSetTests: XCTestCase {
         }
         
         deinit {
-            println("deinit!!!!")
+            print("deinit!!!!")
         }
         
         func voidSent() {
-            println("void sent")
+            print("void sent")
         }
         
         func stringChanged(s: String) {
-            println("stringChanged: " + s)
+            print("stringChanged: " + s)
         }
         
         func twoStringChanged(s1: String, s2: String) {
-            println("twoStringChanged: \(s1) \(s2)")
+            print("twoStringChanged: \(s1) \(s2)")
         }
         
         func intChanged(i: Int, j: Int) {
-            println("intChanged: \(i) \(j)")
+            print("intChanged: \(i) \(j)")
         }
         
         func intAndStringChanged(i: Int, s: String) {
-            println("intAndStringChanged: \(i) \(s)")
+            print("intAndStringChanged: \(i) \(s)")
         }
         
         func namedParameterSent(name: String, count: Int) {
-            println("Named parameters: \(name) \(count)")
+            print("Named parameters: \(name) \(count)")
         }
     }
     
@@ -73,8 +73,8 @@ class ObserverSetTests: XCTestCase {
         let observee = TestObservee()
         var obj: TestObserver? = TestObserver(observee: observee)
         
-        let token = observee.intAndStringObservers.add{ println("int and string closure: \($0) \($1)") }
-        println("intAndStringObservers: \(observee.intAndStringObservers.description)")
+        let token = observee.intAndStringObservers.add{ print("int and string closure: \($0) \($1)") }
+        print("intAndStringObservers: \(observee.intAndStringObservers.description)")
         
         observee.testNotify()
         obj = nil
@@ -82,6 +82,6 @@ class ObserverSetTests: XCTestCase {
         observee.intAndStringObservers.remove(token)
         observee.testNotify()
         
-        println("intAndStringObservers: \(observee.intAndStringObservers.description)")
+        print("intAndStringObservers: \(observee.intAndStringObservers.description)")
     }
 }
