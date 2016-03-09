@@ -77,6 +77,7 @@ class ObserverSetTests: XCTestCase {
         print("intAndStringObservers: \(observee.intAndStringObservers.description)")
         
         observee.testNotify()
+        print("Destroying test observer \(obj)")
         obj = nil
         observee.testNotify()
         observee.intAndStringObservers.remove(token)
