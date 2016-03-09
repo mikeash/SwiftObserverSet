@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E904FD01C80206600383B20 /* CaptureSemanticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E904FCF1C80206600383B20 /* CaptureSemanticsTests.swift */; };
 		C2CC54651A71D8610084E87D /* ObserverSet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2CC54591A71D8610084E87D /* ObserverSet.framework */; };
 		C2CC546C1A71D8610084E87D /* ObserverSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CC546B1A71D8610084E87D /* ObserverSetTests.swift */; };
 		C2CC54761A71D8FE0084E87D /* ObserverSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CC54751A71D8FE0084E87D /* ObserverSet.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E904FCF1C80206600383B20 /* CaptureSemanticsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureSemanticsTests.swift; sourceTree = "<group>"; };
 		C2CC54591A71D8610084E87D /* ObserverSet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObserverSet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2CC545D1A71D8610084E87D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2CC54641A71D8610084E87D /* ObserverSetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObserverSetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				C2CC546B1A71D8610084E87D /* ObserverSetTests.swift */,
+				8E904FCF1C80206600383B20 /* CaptureSemanticsTests.swift */,
 				C2CC54691A71D8610084E87D /* Supporting Files */,
 			);
 			path = ObserverSetTests;
@@ -157,6 +160,8 @@
 		C2CC54501A71D8610084E87D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Mike Ash";
 				TargetAttributes = {
@@ -217,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2CC546C1A71D8610084E87D /* ObserverSetTests.swift in Sources */,
+				8E904FD01C80206600383B20 /* CaptureSemanticsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +406,7 @@
 				C2CC54711A71D8610084E87D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C2CC54721A71D8610084E87D /* Build configuration list for PBXNativeTarget "ObserverSetTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +415,7 @@
 				C2CC54741A71D8610084E87D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
