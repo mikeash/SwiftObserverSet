@@ -37,6 +37,7 @@ open class ObserverSet<Parameters>: CustomStringConvertible {
     open func add<T: AnyObject>(_ object: T, _ f: @escaping (T) -> (Parameters) -> Void) -> ObserverSetEntry<Parameters> {
         let entry = ObserverSetEntry<Parameters>(object: object, f: { f($0 as! T) })
         synchronized {
+            self.entries = self.entries.filter{ $0.object != nil }
             self.entries.append(entry)
         }
         return entry
