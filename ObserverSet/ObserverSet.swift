@@ -8,33 +8,33 @@
 
 import Foundation
 
-public class ObserverSetEntry<Parameters> {
-    private weak var object: AnyObject?
-    private let f: AnyObject -> Parameters -> Void
+open class ObserverSetEntry<Parameters> {
+    fileprivate weak var object: AnyObject?
+    fileprivate let f: (AnyObject) -> (Parameters) -> Void
     
-    private init(object: AnyObject, f: AnyObject -> Parameters -> Void) {
+    fileprivate init(object: AnyObject, f: @escaping (AnyObject) -> (Parameters) -> Void) {
         self.object = object
         self.f = f
     }
 }
 
-public class ObserverSet<Parameters>: CustomStringConvertible {
+open class ObserverSet<Parameters>: CustomStringConvertible {
     // Locking support
     
-    private var queue = dispatch_queue_create("com.mikeash.ObserverSet", nil)
+    fileprivate var queue = DispatchQueue(label: "com.mikeash.ObserverSet", attributes: [])
     
-    private func synchronized(f: Void -> Void) {
-        dispatch_sync(queue, f)
+    fileprivate func synchronized(_ f: (Void) -> Void) {
+        queue.sync(execute: f)
     }
     
     
     // Main implementation
     
-    private var entries: [ObserverSetEntry<Parameters>] = []
+    fileprivate var entries: [ObserverSetEntry<Parameters>] = []
     
     public init() {}
     
-    public func add<T: AnyObject>(object: T, _ f: T -> Parameters -> Void) -> ObserverSetEntry<Parameters> {
+    open func add<T: AnyObject>(_ object: T, _ f: @escaping (T) -> (Parameters) -> Void) -> ObserverSetEntry<Parameters> {
         let entry = ObserverSetEntry<Parameters>(object: object, f: { f($0 as! T) })
         synchronized {
             self.entries.append(entry)
@@ -42,18 +42,18 @@ public class ObserverSet<Parameters>: CustomStringConvertible {
         return entry
     }
     
-    public func add(f: Parameters -> Void) -> ObserverSetEntry<Parameters> {
+    open func add(_ f: @escaping (Parameters) -> Void) -> ObserverSetEntry<Parameters> {
         return self.add(self, { ignored in f })
     }
     
-    public func remove(entry: ObserverSetEntry<Parameters>) {
+    open func remove(_ entry: ObserverSetEntry<Parameters>) {
         synchronized {
             self.entries = self.entries.filter{ $0 !== entry }
         }
     }
     
-    public func notify(parameters: Parameters) {
-        var toCall: [Parameters -> Void] = []
+    open func notify(_ parameters: Parameters) {
+        var toCall: [(Parameters) -> Void] = []
         
         synchronized {
             for entry in self.entries {
@@ -72,7 +72,7 @@ public class ObserverSet<Parameters>: CustomStringConvertible {
     
     // MARK: CustomStringConvertible
     
-    public var description: String {
+    open var description: String {
         var entries: [ObserverSetEntry<Parameters>] = []
         synchronized {
             entries = self.entries
@@ -84,7 +84,7 @@ public class ObserverSet<Parameters>: CustomStringConvertible {
                 ? "\(entry.f)"
                 : "\(entry.object) \(entry.f)")
         }
-        let joined = strings.joinWithSeparator(", ")
+        let joined = strings.joined(separator: ", ")
         
         return "\(Mirror(reflecting: self).description): (\(joined))"
     }
