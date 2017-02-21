@@ -1,0 +1,5 @@
+language: objective-c
+osx_image: xcode7.3
+
+script:
+- xcodebuild -workspace ObserverSet.xcworkspace  -scheme ObserverSet -configuration Debug -sdk iphonesimulator9.3 -destination "OS=9.3,name=iPad 2"
