@@ -32,12 +32,12 @@ class ObserverSetTests: XCTestCase {
     
     class TestObserver {
         init(observee: TestObservee) {
-            observee.voidObservers.add(self, self.dynamicType.voidSent)
-            observee.stringObservers.add(self, self.dynamicType.stringChanged)
-            observee.twoStringObservers.add(self, self.dynamicType.twoStringChanged)
-            observee.intObservers.add(self, self.dynamicType.intChanged)
-            observee.intAndStringObservers.add(self, self.dynamicType.intAndStringChanged)
-            observee.namedParameterObservers.add(self, self.dynamicType.namedParameterSent)
+            observee.voidObservers.add(self, type(of: self).voidSent)
+            observee.stringObservers.add(self, type(of: self).stringChanged)
+            observee.twoStringObservers.add(self, type(of: self).twoStringChanged)
+            observee.intObservers.add(self, type(of: self).intChanged)
+            observee.intAndStringObservers.add(self, type(of: self).intAndStringChanged)
+            observee.namedParameterObservers.add(self, type(of: self).namedParameterSent)
         }
         
         deinit {
@@ -48,23 +48,23 @@ class ObserverSetTests: XCTestCase {
             print("void sent")
         }
         
-        func stringChanged(s: String) {
+        func stringChanged(_ s: String) {
             print("stringChanged: " + s)
         }
         
-        func twoStringChanged(s1: String, s2: String) {
+        func twoStringChanged(_ s1: String, s2: String) {
             print("twoStringChanged: \(s1) \(s2)")
         }
         
-        func intChanged(i: Int, j: Int) {
+        func intChanged(_ i: Int, j: Int) {
             print("intChanged: \(i) \(j)")
         }
         
-        func intAndStringChanged(i: Int, s: String) {
+        func intAndStringChanged(_ i: Int, s: String) {
             print("intAndStringChanged: \(i) \(s)")
         }
         
-        func namedParameterSent(name: String, count: Int) {
+        func namedParameterSent(_ name: String, count: Int) {
             print("Named parameters: \(name) \(count)")
         }
     }

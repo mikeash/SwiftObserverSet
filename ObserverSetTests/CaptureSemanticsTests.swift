@@ -24,7 +24,7 @@ class CaptureSemanticsTests: XCTestCase {
                 })
         }
         
-        private func foo() {
+        fileprivate func foo() {
         }
     }
     
@@ -32,7 +32,7 @@ class CaptureSemanticsTests: XCTestCase {
         let observee = TestObservee()
         
         init() {
-            observee.event.add(self, self.dynamicType.voidHandler)
+            observee.event.add(self, type(of: self).voidHandler)
         }
         
         func voidHandler() {
