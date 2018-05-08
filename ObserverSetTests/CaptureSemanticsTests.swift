@@ -19,9 +19,9 @@ class CaptureSemanticsTests: XCTestCase {
         let observee = TestObservee()
         
         init() {
-            observee.event.add({ [weak self] () -> Void in
+            observee.event.add { [weak self] in
                 self?.foo()
-                })
+            }
         }
         
         private func foo() {
@@ -32,10 +32,10 @@ class CaptureSemanticsTests: XCTestCase {
         let observee = TestObservee()
         
         init() {
-            observee.event.add(self, self.dynamicType.voidHandler)
+            observee.event.add(self, type(of: self).voidHandler)
         }
         
-        func voidHandler() {
+        func voidHandler(_: Void) {
         }
     }
     
